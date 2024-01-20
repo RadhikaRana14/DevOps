@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 public class AmozonAppDockerTest {
 	WebDriver driver;
 
-	@Parameters({ "bname" })
+	@Parameters({"bname"})
 	@Test
 	public void CrossbrowserTest(String bname) throws MalformedURLException, InterruptedException {
 		if (bname.equalsIgnoreCase("chrome")) {
@@ -39,6 +39,6 @@ public class AmozonAppDockerTest {
 		driver.get("https://www.amazon.in");
 		Thread.sleep(2000);
 		System.out.println("Amazom Application Excecuting Parallelly");
-
+		
 	}
 }
